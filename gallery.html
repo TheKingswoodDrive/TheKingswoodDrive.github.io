@@ -20,6 +20,10 @@
     <!-- Custom styles for this template -->
     <link href="css/business-casual.min.css" rel="stylesheet">
 
+
+    <!--- swipe scripts -->
+	
+
   </head>
 
   <body>
@@ -248,14 +252,17 @@ img {vertical-align: middle;}
 
 <script>
 var slideIndex = 1;
+var slide = false;
 showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  slide = true;
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  slide = true;
 }
 
 function showSlides(n) {
@@ -273,6 +280,13 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+window.setInterval(function(){
+  if (slide == false) { plusSlides(1); }
+  slide = false; 
+}, 5950);
+
+
 </script>
 
 
