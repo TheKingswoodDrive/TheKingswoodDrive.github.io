@@ -1,6 +1,6 @@
 # TheKingswoodDrive.github.io
 
-A github hosted static webpage which serves to advertise a property for rent on Kingswood Drive
+A github hosted static webpage which serves to advertise a property for rent on Kingswood Drive  
 
 [see the website](https://thekingswooddrive.github.io)
 
